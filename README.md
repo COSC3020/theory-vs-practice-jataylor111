@@ -28,6 +28,7 @@ Cade brought up this one while I was talking to him in lab.  The bounds of our c
 According to Wikipedia the average time complexity of searching for a value in a binary search tree is $log(n)$, with this we can compute the approximate time for the program to finish.
 
 first we need the values of $log(1000)$ and $log(10000)$ these we can then put into a ratio as to the difference between 1000 elements and 10000 elements
+
 $log(1000) = 3$
 
 $log(10000) = 4$
