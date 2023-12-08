@@ -22,7 +22,7 @@ The first is that when we are analyzing an algorithm we ignore any constants tha
 
 The second is that the complexity of an algorithm doesn't take into account the hardware of the machine running the program.  It could run faster or slower based on the resources available.
 
-Cade brought up this one while I was talking to him in lab.  The bounds of our complexity can come into question when we start looking at Big Theta complexity.  For instance the $\Theta$ complexity of a program might be $nlogn$ but its upper and lower are $2^n$ and $n$ respectively, which are two very different functions that leave a lot of room for movement between them.
+Cade brought up this one while I was talking to him in lab.  The bounds of our complexity can come into question for instance a program might have upper and lower are $2^n$ and $n$ respectively, which are two very different functions that leave a lot of room for movement between them.
 
 2.
 According to Wikipedia the average time complexity of searching for a value in a binary search tree is $log(n)$, with this we can compute the approximate time for the program to finish.
@@ -36,11 +36,11 @@ $log(10000) = 4$
 Now we can build an equation similar to how chemistry builds their unit conversions $5seconds/3searches * 4searches / 1$ this would cancel out our searches and leave us with $5seconds / 3 * 4 / 1$ which further simplifies to $1.6667seconds * 4 \approx 6.7seconds$.
 
 3.
-The algorithm might not be efficient enough to handle these higher element trees, in other words, it might not have a good enough time complexity to make finding elements viable requiring further bug fixing.
+The algorithm might not be written in a way that meets the expected time complexity, as in the program might still find the value we're looking for in the tree but an error in the code means that it is not a fully proper tree search algorithm with a complexity of $\Theta(logn)$.
 
 Like with the second point I provided above, these two different algorithms might have been run on two different computers or something was going on in the background that was taking up avaliable resources, then the two different runs could still have the same asymptotic complexity but they wouldn't necessarily have predictable outcomes.
 
-The value we are looking for might have been omitted from the graph itself, this would mean that the algorithm would have to run through every single potential element until it determined that the requested value was absent.
+The graph might be made up of different data types, such as strings and integers, and if that is the case then it can take longer since strings can be very long, the time it takes the program to check a value can add up if it is having to comb through many different long strings.  Such as, if we were looking for a value at one point but there are a bunch of long city names, such as "Mooselookmeguntic, Maine" (I did have to google long city names for that one, I know of a couple but have no idea how to spell them) above it the program would take a while checking each of those names against the desired search value.
 
 
 
