@@ -22,7 +22,7 @@ The first is that when we are analyzing an algorithm we ignore any constants tha
 
 The second is that the complexity of an algorithm doesn't take into account the hardware of the machine running the program.  It could run faster or slower based on the resources available.
 
-Cade brought up this one while I was talking to him in lab.  The bounds of our complexity can come into question for instance a program might have upper and lower are $2^n$ and $n$ respectively, which are two very different functions that leave a lot of room for movement between them.
+Cade brought up this one while I was talking to him in lab.  The bounds of our complexity can come into question for instance a program might have upper and lower bound that are $2^n$ and $n$ respectively, which means we run into very inconsistent run times, you might run the program a couple times and it is very quick more in line with the lower bound but then when you run it a third time it could be there for an hour reflecting the upper bound.
 
 2.
 According to Wikipedia the average time complexity of searching for a value in a binary search tree is $log(n)$, with this we can compute the approximate time for the program to finish.
